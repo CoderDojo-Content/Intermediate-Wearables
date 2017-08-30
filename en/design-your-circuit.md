@@ -27,6 +27,12 @@
 9. Attach it by sewing through the pin with the arrow that points **in towards** the LED in the centre. This is the **data in** pin. Secure the thread with a few stitches at the back of the fabric and cut it short.
  * It is recommended to coat the ends of the thread with clear nail polish after cutting, to prevent fraying and avoid stray threads from causing a short circuit.
  
-10. Using a _new piece of conductive thread_, connect the **data out** pin of the second NeoPixel to the **data in** pin of the third NeoPixel. Continue in this way until all the NeoPixels are chained together along their **data** pins.
+10. Using a _new piece of conductive thread_, connect the **data out** pin of the second NeoPixel to the **data in** pin of the third NeoPixel. Continue in this way until all the NeoPixels are chained together along their **data** pins, with a separate piece of thread in between each pair.
+ * The chain ends with the last NeoPixel: you don't attach anything to its **data out** pin!
+ 
+11. Next take a long piece of conductive thread, about 50-100cm. Starting again with the first NeoPixel in the chain, sew through the **-** pin of each one, sewing a running stitch in between pins. This time you can continue with the same piece of thread right to the end of the chain.
+ * Make sure the thread does not touch or cross any of the thread in the **data** line!
+
+12. With one more long piece of conductive thread, connect all the **+** pins of the NeoPixels in the same way you just connected the **-** pins.
  
 
