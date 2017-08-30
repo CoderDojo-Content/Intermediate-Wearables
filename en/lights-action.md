@@ -24,7 +24,7 @@
  
 9. Attach three crocodile clips to the **GND**, **#6** and **VBATT** pins.
 
-10. Take a NeoPixel and connect the **GND** wire to its **-** pin. Connect the **#6** to the **data in** pin: this is the pin with an arrow pointing **in** towards the LED. Finally connect the **VBATT** to the **+** pin.
+10. Take a NeoPixel and connect the **GND** wire to its **-** pin. Connect the **#6** to the **data in** pin: this is the pin with an arrow pointing **in towards** towards the LED in the centre. Finally connect the **VBATT** to the **+** pin.
 
 11. Ready? Plug in the Flora once more and watch your LED start to light up and flash a multicoloured sequence! 
 
