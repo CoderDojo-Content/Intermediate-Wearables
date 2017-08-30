@@ -22,7 +22,7 @@
 9. Attach it by sewing through the **data in** pin \(remember, this is the pin with the arrow pointing **in towards** the LED in the centre/). Secure the thread with a few stitches at the back of the fabric and cut it short.
  * It is recommended to coat the ends of the thread with clear nail polish after cutting, to prevent fraying and avoid stray threads from causing a short circuit.
  
-10. Using a _new piece of conductive thread_, connect the **data out** pin of the second pixel to the **data in** pin of the third pixel. Continue in this way until all the pixels are chained together along their **data** pins, with a separate piece of thread in between each pair.
+10. Using a _new piece of conductive thread_, connect the **data out** pin of the second pixel to the **data in** pin of the third pixel. Continue in this way until all the pixels are chained together along their **data** pins, with a separate piece of thread running in between each pair.
  * The chain ends with the last pixel: you don't attach anything to its **data out** pin!
  
 11. Next you will connect up all the **negative** pins in the chain, this time using one long piece of conductive thread, about 50-100cm. Sew a few tight stitches through the **-** pin of each pixel starting with the first one and ending with the last. As usual sew with a running stitch in between pixels. 
