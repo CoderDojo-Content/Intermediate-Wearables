@@ -19,15 +19,14 @@
 6. Ready to start sewing? Once you have everything marked out, set aside all the pieces and grab a needle and some conductive thread. About 20cm should be enough to begin with if your NeoPixels are quite close together.
  * If you have an embroidery hoop, place your fabric into it. The whole shape you marked out should fit inside.
 
-7. You will sew the **data** line first. This is identified by the little arrows. Take your first NeoPixel and put it in place, with the arrows pointing towards where the next one will be. Attach it to the fabric by sewing through the pin with the arrow that points **away** from the LED in the centre. 
+7. You will sew the **data** line first. This is identified by the little arrows. Take your first NeoPixel and put it in place, with the arrows pointing towards where the next one will be. Attach it to the fabric by sewing through the pin with the arrow that points **away** from the LED in the centre. This is the **data out** pin. 
  * Be sure to make a secure connection by sewing three or four stitches tightly through the pin.
  
-8. Sew a running stitch to the spot where the next NeoPixel will go.
+8. Sew a running stitch to the spot where the next NeoPixel will go. Then take the next NeoPixel and place it onto its spot, with the arrows pointing away from the first one and towards the next spot. 
 
-9. Take the next NeoPixel and place it onto its spot, with the arrows pointing away from the first one and towards the next spot. 
-
-10. Attach it by sewing through the pin with the arrow that points **in towards** the LED in the centre. Secure the thread with a few stitches at the back of the fabric and cut it short.
+9. Attach it by sewing through the pin with the arrow that points **in towards** the LED in the centre. This is the **data in** pin. Secure the thread with a few stitches at the back of the fabric and cut it short.
  * It is recommended to coat the ends of the thread with clear nail polish after cutting, to prevent fraying and avoid stray threads from causing a short circuit.
  
+10. Using a _new piece of conductive thread_, connect the **data out** pin of the second NeoPixel to the **data in** pin of the third NeoPixel. Continue in this way until all the NeoPixels are chained together along their **data** pins.
  
 
