@@ -1,4 +1,4 @@
-1. Gather all your NeoPixels and some chalk or a pencil. Lay a t-shirt \(or whatever piece of fabric you're making the project on\) out on a flat surface. Arrange the NeoPixels into a shape that you like. I'm going to do a smiley face! Some other ideas are
+1. Gather all your NeoPixels and some chalk or a pencil. Lay a t-shirt \(or whatever piece of fabric you're making the project on\) out on a flat surface. Arrange the pixels into a shape that you like. I'm going to do a smiley face! Some other ideas are
  * A straight line
  * A heart (eight NeoPixels is perfect for this)
  * Pretend "buttons" down the front of a t-shirt
@@ -14,7 +14,7 @@
 6. Ready to start sewing? Once you have everything marked out, set aside all the pieces and grab a needle and some conductive thread. About 20cm should be enough to begin with if your pixels are quite close together.
  * If you have an embroidery hoop, place your fabric into it. The whole shape you marked out should fit inside.
 
-7. You will sew the **data** line first, which is identified by the little arrows. Take your first pixel and put it in place, with the arrows pointing towards where the next one will be. Attach it to the fabric by sewing through the pin with the arrow that points **away** from the LED in the centre. This is the **data out** pin. 
+7. You will sew the **data** line first. Take your first pixel and put it in place, with the arrows pointing towards where the next one will be. Attach it to the fabric by sewing through the pin with the arrow that points **away** from the LED in the centre. This is the **data out** pin. 
  * Be sure to make a secure connection by sewing three or four stitches tightly through the pin.
  
 8. Sew a running stitch to the spot where the next pixel will go. Then take the next pixel and place it onto its spot, with the arrows pointing away from the first one and towards the next spot. 
@@ -25,7 +25,9 @@
 10. Using a _new piece of conductive thread_, connect the **data out** pin of the second pixel to the **data in** pin of the third pixel. Continue in this way until all the pixels are chained together along their **data** pins, with a separate piece of thread in between each pair.
  * The chain ends with the last pixel: you don't attach anything to its **data out** pin!
  
-11. Next take a long piece of conductive thread, about 50-100cm. Starting again with the first pixel in the chain, sew through the **-** pin of each one, sewing a running stitch in between pins. This time you can continue with the same piece of thread right to the end of the chain.
+11. Next you will connect up all the **negative** pins in the chain, using one long piece of conductive thread, about 50-100cm, sew through the **-** pin of each pixel starting with the first one and ending with the last. As usual sew with a running stitch in between pixels. 
+
+12. Next take a long piece of conductive thread, about 50-100cm. Starting again with the first pixel in the chain, sew through the **-** pin of each one, sewing a running stitch in between pins. This time you can continue with the same piece of thread right to the end of the chain.
  * Make sure the thread does not touch or cross any of the thread in the **data** line!
 
 12. With one more long piece of conductive thread, connect all the **+** pins of the pixels in the same way you just connected the **-** pins.
