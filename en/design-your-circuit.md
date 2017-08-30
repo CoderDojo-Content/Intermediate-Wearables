@@ -19,7 +19,17 @@
 7. Ready to upload! Plug in your Flora. Press the **reset** button on the Flora and then _straight away_, while the red light is pulsing, click on the arrow icon next to the tick to **Upload** the code onto the board. You should see the red light flashing, followed by two orange lights on the board. When it's finished, you should see the words "Done uploading." at the bottom of your sketch.
  * At first it can be a bit tricky to get the upload to work. Make sure the correct board is selected and that you have a working USB cable that's plugged in properly on both ends. After that, it's all about timing! You'll get the hang of it.
  
-8. 
+8. Unplug the Flora from your computer \(the power switch on a Flora can be used to turn off the power when using a battery pack, however it does not work when plugged into a computer via USB\).
+ * It's important to always unplug or switch off the board before connecting or disconnecting other components so that you don't damage them!
+ 
+9. Attach three crocodile clips to the **GND**, **#6** and **VBATT** pins.
+
+10. Take a NeoPixel and connect the **GND** wire to its **-** pin. Connect the **#6** to the **data in** pin: this is the arrow pointing **in** towards the LED. Finally connect the **VBATT** to the **+** pin.
+
+11. Ready? Plug in the Flora once more and watch your LED start to light up and flash a multicoloured sequence! 
+
+12. Test each, of your NeoPixels one by one, by connecting them up to the Flora as you've just done. Remember to **unplug the Flora** before connecting or disconnecting any wires! 
+
 
 
 
