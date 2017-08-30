@@ -25,9 +25,7 @@
 10. Using a _new piece of conductive thread_, connect the **data out** pin of the second pixel to the **data in** pin of the third pixel. Continue in this way until all the pixels are chained together along their **data** pins, with a separate piece of thread in between each pair.
  * The chain ends with the last pixel: you don't attach anything to its **data out** pin!
  
-11. Next you will connect up all the **negative** pins in the chain, using one long piece of conductive thread, about 50-100cm. Sew a few tight stitches through the **-** pin of each pixel starting with the first one and ending with the last. As usual sew with a running stitch in between pixels. 
-
-12. Next take a long piece of conductive thread, about 50-100cm. Starting again with the first pixel in the chain, sew through the **-** pin of each one, sewing a running stitch in between pins. This time you can continue with the same piece of thread right to the end of the chain.
+11. Next you will connect up all the **negative** pins in the chain, this time using one long piece of conductive thread, about 50-100cm. Sew a few tight stitches through the **-** pin of each pixel starting with the first one and ending with the last. As usual sew with a running stitch in between pixels. 
  * Make sure the thread does not touch or cross any of the thread in the **data** line!
 
 12. With one more long piece of conductive thread, connect all the **+** pins of the pixels in the same way you just connected the **-** pins.
