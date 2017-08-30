@@ -8,9 +8,6 @@
 3. Trace around the outside and the inside of the shape with the pencil or chalk, marking the spot where each NeoPixel is.
 
 4. Decide roughly where you plan to have the Flora and choose one NeoPixel for it to be connected to: this will be the first one you start sewing on. The rest will be connected to each other one by one in a chain.
-
-4. You will be sewing on the NeoPixels in one continuous line, with the Flora attached to one end. Decide roughly where you plan to have the Flora and work out which NeoPixel it will be connected to: this is the start of your line.
- * The aim is to trace out the line in such a way that it does not cross over itself \(this would cause problems with a short circuit!\)
  
 5. Look closely at the NeoPixels. Do you see the little arrows?
  Starting with the first, \(the one you just picked out\), turn each NeoPixel so that its arrows point to the next one in the chain. You should be able to trace out one continuous line along the arrows from the first NeoPixel to the last.
