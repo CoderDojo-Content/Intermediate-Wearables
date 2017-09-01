@@ -1,4 +1,4 @@
-1. Before you start, it is a good idea to test each of your NeoPixels. Open the Arduino IDE. Make sure the correct device is selected in the **Tools** menu. Mine is _Adafruit Flora_ for this project.
+1. Before you start, it is a good idea to test each of your NeoPixels. Open the Arduino IDE. Make sure the correct device is selected in the **Tools** menu. I'm using the Flora so it's _Adafruit Flora_.
 
 2. Go to the **File** menu, select **Examples**, then find **Adafruit NeoPixel** \(it may be at the very bottom!\) and choose **strandtest**.
 
