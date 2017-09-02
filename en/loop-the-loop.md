@@ -8,18 +8,7 @@
         }
     ```
 
-2. Delete the other lines in code in your _loop_ function, or **comment them out** \(so you can put them back in later if you want\). Your loop() code should look like this now:
-    ```
-        void loop() {
-            // put your main code here, to run repeatedly:
-            // lightPixel(0, strip.Color(0, 0, 255));
-            // lightPixel(1, strip.Color(255, 0, 0));
-            // lightPixel(2, strip.Color(0, 0, 255));
-
-            lightAll(strip.Color(0, 0, 255));
-        }
-    ``` 
-    * Remember the computer ignores comments! So the above code is the same as: 
+2. Delete the code in the _loop_ function and add a new line, so the function looks like this now:
         ```
             void loop() {
                 lightAll(strip.Color(0, 0, 255));
