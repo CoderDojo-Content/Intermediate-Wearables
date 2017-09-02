@@ -42,7 +42,7 @@
         }
     ```
 The above code checks how many pixels are in your chain and then runs the code inside the curly braces that many times. 
-* _Here's the clever bit:_ The value of `i` starts off as zero and changes by one each time, so every time the line `strip.setPixelColor(i, c);` runs, it's setting the colour of the _next_ pixel!
+ * _Here's the clever bit:_ The value of `i` starts off as zero and changes by one each time, so every time the line `strip.setPixelColor(i, c);` runs, it's setting the colour of the _next_ pixel!
 
 6. Add the following new function to the end of your sketch. Don't worry, you don't have to understand it just now! It's borrowed from the example sketch you ran earlier. 
     ```
@@ -59,12 +59,11 @@ The above code checks how many pixels are in your chain and then runs the code i
             return strip.Color(WheelPos * 3, 255 - WheelPos * 3, 0);
         }
     ```
-    * This function lets you choose any numer from 0 to 255 and mixes a colour for you, instead of having to mix it yourself. on a scale.... from the rainbow...
+    * This function lets you choose any numer from 0 to 255 and it mixes a colour for you.
 
 7. Now add another new function. See if you can spot the **loop** in it!
     ```
         void lightAllRainbow() {
- 
             for(uint16_t i=0; i<strip.numPixels(); i++) {
                 strip.setPixelColor(i, Wheel(((i * 256 / strip.numPixels())) & 255));
             }
@@ -81,4 +80,3 @@ The above code checks how many pixels are in your chain and then runs the code i
     ``` 
     * Notice how you don't pass any **parameters** this time. That's because the new function figures out the colours for you!
 
-    

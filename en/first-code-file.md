@@ -54,24 +54,3 @@
     ``` 
 
 12. Verify and upload your code once more. This time you should see the first three pixels light up blue.
-
-13. **CHECK IF THIS FITS HERE. OTHERWISE MOVING TO NEXT CARD \(might move either way\) !**Now, change the second line of the _loop_ function from
-    ```
-        lightPixel(1, strip.Color(0, 0, 255));
-    ``` 
-    to
-        ```
-        lightPixel(1, strip.Color(255, 0, 0));
-    ``` 
-
-14. It should look like this now:
-    ```
-        void loop() {
-            // put your main code here, to run repeatedly:
-            lightPixel(0, strip.Color(0, 0, 255));
-            lightPixel(1, strip.Color(255, 0, 0));
-            lightPixel(2, strip.Color(0, 0, 255));
-        }
-    ``` 
-    Verify and upload the code to the Flora. Can you work out what each of the two **parameters** in your function are for?
-
