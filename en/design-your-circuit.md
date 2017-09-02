@@ -29,5 +29,17 @@
  * Make sure the thread does not touch or cross any of the thread in the **data** line!
 
 12. With one more long piece of conductive thread, connect all the **+** pins of the pixels in the same way you just connected the **-** pins.
+
+13. Finally, place the Flora on the t-shirt \(make sure it is **not plugged in**!\). You will connect it with running stitches all the way to that first pixel. Using three separate pieces of conductive thread, connect the following pins. Make sure none of the threads touch each other. You can stitch some of the unused pins to the t-shirt with some plain thread to keep the Flora more securely in place.
+ * the **#6** pin connects to the **data in** pin of the first NeoPixel
+ * the **GND** pin connects to the **-** pin 
+ * the **VBATT** pin connects to the **+** pin
+
+
+ 14. It's the moment of truth... plug in your Flora! 
+  * If your pixels didn't all light up, don't panic. Some causes could be 
+  * A short circuit: are any of the threads touching? Is there anything metallic on the fabric or touching the circuit? Is the fabric wet?
+  * Loose connections: The stitches at every pin should be good and tight for a secure connection
+  * Correct code uploaded: Does your code have the right number of pixels defined? Did it compile and upload without errors?
  
 

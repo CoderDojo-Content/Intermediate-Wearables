@@ -9,7 +9,7 @@
 4. Change the first number to `1`. The line should look like this now:
 
    ```
-      Adafruit_NeoPixel strip = Adafruit_NeoPixel(8, PIN, NEO_GRB + NEO_KHZ800);
+      Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, PIN, NEO_GRB + NEO_KHZ800);
    ```
 
 5. Click **File** &gt; **Save As...**. Type in a name for your sketch and click **Save**.
@@ -28,7 +28,14 @@
 
 11. Ready? Plug in the Flora once more and watch your LED start to light up and flash a multicoloured sequence! 
 
-12. Test each, of your NeoPixels one by one, by connecting them up to the Flora as you've just done. Remember to **unplug the Flora** before connecting or disconnecting any wires! 
+12. Test each of your NeoPixels one by one, by connecting them up to the Flora as you've just done. Remember to **unplug the Flora** before connecting or disconnecting any wires! 
+
+13. Once you're done testing the NeoPixels, change the code again to the total number of pixels you'll be using. Mine is eight:
+   ```
+      Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, PIN, NEO_GRB + NEO_KHZ800);
+   ```
+
+14. Click **Verify** and then **upload** the new code onto the Flora. Next you're going to make your NeoPixel circuit!
 
 
 
