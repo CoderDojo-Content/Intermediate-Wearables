@@ -66,16 +66,12 @@
             delay(100);
             turnAllOff();
             delay(100);
-            lightAllOneColour(strip.Color(0, 255, 255));
-            delay(100);
-            turnAllOff();
-            delay(100);
             lightAllOneColour(strip.Color(255, 255, 0));
             delay(100);
             turnAllOff();
             delay(100);
             animateRainbow(100);
-            animateRainbow(100);
-            animateRainbow(100);
+            delay(100);
+            turnAllOff();
         }
     ``` 
