@@ -38,11 +38,11 @@
 
 4. How about adding a delay? Let's write a new function, that's similar to the one above but with a delay added to the loop so it animates:
     ```
-        void animateRainbow() {
+        void animateRainbow(, uint8_t wait) {
             for(uint16_t i=0; i<strip.numPixels(); i++) {
                 strip.setPixelColor(i, Wheel(((i * 256 / strip.numPixels())) & 255));
             strip.show();
-            delay();
+            delay(wait);
             }
         }
     ```
@@ -51,6 +51,31 @@
 5. Change the function call in the `loop` function:
     ```
         void loop() {
+            animateRainbow(100);
+        }
+    ``` 
+
+6. Have a go at putting together a sequence using a few function calls in the `loop` function. Experiment with different colours and `delay` lengths!  
+    ```
+        void loop() {
+            lightAllOneColour(strip.Color(0, 0, 255));
+            delay(100);
+            turnAllOff();
+            delay(100);
+            lightAllOneColour(strip.Color(255, 0, 255));
+            delay(100);
+            turnAllOff();
+            delay(100);
+            lightAllOneColour(strip.Color(0, 255, 255));
+            delay(100);
+            turnAllOff();
+            delay(100);
+            lightAllOneColour(strip.Color(255, 255, 0));
+            delay(100);
+            turnAllOff();
+            delay(100);
+            animateRainbow(100);
+            animateRainbow(100);
             animateRainbow(100);
         }
     ``` 
