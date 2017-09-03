@@ -65,3 +65,4 @@
 12. Verify and upload your code once more. This time you should see the first three pixels light up blue.
  * See if you can add more lines of code to make the rest of the pixels light up as well!
 
+

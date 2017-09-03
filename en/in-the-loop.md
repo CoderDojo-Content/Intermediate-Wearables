@@ -29,7 +29,7 @@
 3. Verify and upload your sketch to the Flora. Did all the pixels light up blue?
  * You might have figured out that the first number in the line `strip.setPixelColor(0, strip.Color(0, 0, 255));` decides which pixel to light up. Have you noticed that the first pixel is zero instead of one? So if you have eight pixels the last one is number `7`.
 
- 4. Let's write another function to turn all the pixels off! At the end of the sketch, type the following code. Make sure it's outside the `lightAll` function, so on a new line after the `}`.
+4. Let's write another function to turn all the pixels off! At the end of the sketch, type the following code. Make sure it's outside the `lightAll` function, so on a new line after the `}`.
      ``` 
         void turnAllOff() {
             strip.setPixelColor(0, strip.Color(0, 0, 0));
@@ -57,5 +57,3 @@
  * After the Flora has run all the code in the `setup` function, it then runs the `loop` function over and over again forever!
 
  7. Try putting in different values for the `delay`. For example, `delay(50);` or `delay(1000);`. Don't forget to verify and upload the code to test out your changes!
-
- 8.
