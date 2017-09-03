@@ -8,12 +8,12 @@
         }
     ```
 
-2. Delete the code in the _loop_ function and add a new line, so the function looks like this now:
-        ```
-            void loop() {
-                lightAll(strip.Color(0, 0, 255));
-            }
-        ``` 
+2. Delete the code in the _loop_ function and add a new line, so it looks like this now:
+    ```
+        void loop() {
+            lightAll(strip.Color(0, 0, 255));
+        }
+    ``` 
 
 3. Verify and upload your code. What do you notice? This time you only needed to write _one line_ of code to call a function, and all of the pixels turned on. Take a look at your two functions, _lightPixel_ and _lightAll_. Can you spot the difference between them?
 
