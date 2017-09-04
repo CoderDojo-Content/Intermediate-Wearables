@@ -14,7 +14,7 @@
 
 5. Click **File** &gt; **Save As...**. Type in a name for your sketch and click **Save**.
 
-6. At the top of your **sketch**, click on the tick icon to **Verify** the code. At the bottom of the window you should see the words "Done Compiling" which means the code **compiled** successfully \(if not, you will see errors printed here. To fix these you will need to do some debugging and change your code!\).
+6. At the top of your **sketch**, click on the tick icon to **Verify** the code. At the bottom of the window you should see the words "Done Compiling" which means the code **compiled** successfully \(if not, you will see errors printed here. To fix these you will need to do some debugging and change your code!\). ![](assets/verifyIcon.png)
 
 7. Ready to upload! Plug in your Flora. Press the **reset** button on the Flora and then _straight away_, while the red light is pulsing, click on the arrow icon next to the tick to **Upload** the code onto the board. You should see the red light flashing, followed by two orange lights on the board. When it's finished, you should see the words "Done uploading." at the bottom of your sketch.
 ![](assets/upload3_120_800.png)
