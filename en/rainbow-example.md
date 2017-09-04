@@ -70,4 +70,4 @@
         }
     ``` 
 
-7. You can do loads of cool things using the tricks you've learned with colours, loops and delays. If you want to see some more examples, check out the `strandtest` sketch that you used to test out the NeoPixels.
+7. You can do loads of cool things using the tricks you've learned with colours, loops and delays. If you want to see some more examples, check out the **strandtest** sketch that you used to test out the NeoPixels.
