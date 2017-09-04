@@ -9,15 +9,16 @@
     ```
     * This function takes a **parameter**: that's the bit inside the round brackets. It's some extra information that you give the function when you call it.
 
-2. Delete the code in the `loop`` function and add a new line, so it looks like this now:
+2. Delete the code in the `loop` function and add the following two calls to your new function:
     ```
         void loop() {
             lightAllOneColour(strip.Color(0, 0, 255));
+            lightAllOneColour(strip.Color(0, 0, 0));
         }
     ``` 
-    * You're passing in a colour as a **parameter** to your function. This is the colour that gets used in place of `c` in the line `strip.setPixelColor(i, c);`.
+    See how you're passing in a colour as a **parameter** to your function? This is the colour that gets used in place of `c` in the line `strip.setPixelColor(i, c);`. It means you can use the same function to make the pixels any colour, even to turn them all off!
 
-3. Verify and upload your code. What do you notice? This time you only needed to write _one line_ of code that sets set a pixel's colour, and all of the pixels turned on. 
+3. Verify and upload your code. What do you notice? This time you only needed to write _one line_ of code that calls `strip.setPixelColor`, and all of the pixels turned on. 
 
 4. Inside your new function, can you see that there is another pair of **curly braces** with some code in between? This pair belongs to something called a **for loop** \(but not the `loop` function!\), rather than a function. It looks like this:
     ``` 
@@ -25,8 +26,7 @@
             
         }
     ```
-The above code checks how many pixels are in your chain and then runs the code inside the curly braces that many times. 
- * _Here's the clever bit:_ The value of `i` starts off as zero and changes by one each time, so every time the line `strip.setPixelColor(i, c);` runs, it's setting the colour of the _next_ pixel!
+The above code checks how many pixels are in your chain and then runs the code inside the curly braces that many times. _Here's the clever bit:_ The value of `i` starts off as zero and changes by one each time, so every time the line `strip.setPixelColor(i, c);` runs, it's setting the colour of the _next_ pixel!
 
 5. In your new `lightAllOneColour` function, add the following line after `strip.show();`
     ```
@@ -38,7 +38,7 @@ The above code checks how many pixels are in your chain and then runs the code i
             for(uint16_t i=0; i<strip.numPixels(); i++) {
                 strip.setPixelColor(i, c);
                 strip.show();
-                delay(200);
+                delay(150);
             }
         }
     ```

@@ -1,4 +1,4 @@
-1. In Arduino IDE, click **File** &gt **New**. You will get a blank **sketch** that looks like this 
+1. In Arduino IDE, click **File** &gt; **New**. You will get a blank **sketch** that looks like this 
     ```
         void setup() {
             // put your setup code here, to run once:
@@ -11,7 +11,7 @@
         }
     ```
     Any line that starts with `// ` is a **comment**. Comments are ignored by the computer. They're useful for making notes for yourself or other people reading the code.
-2. Go to **Sketch** &gt **Include Library** and select **Adafruit NeoPixel**. Do you see this line of code added to the top of your sketch? `#include <Adafruit_NeoPixel.h>` Click at the end of this line and hit Return a few times to add some blank lines underneath.
+2. Go to **Sketch** &gt; **Include Library** and select **Adafruit NeoPixel**. Do you see this line of code added to the top of your sketch? `#include <Adafruit_NeoPixel.h>` Click at the end of this line and hit Return a few times to add some blank lines underneath.
 
 3. Underneath the new line of code, type the following: `#define PIXELS_PIN 6` You are setting which pin of the Flora to use for **data** \(instructions\). That's the pin you connect the **data** pins of the pixels to, pin number 6.
 
@@ -60,9 +60,8 @@
             strip.show();
         }
     ```
-    * Can you work out what some of this code is doing?
+    Can you work out what some of this code is doing?
 
-12. Verify and upload your code once more. This time you should see the first three pixels light up blue.
- * See if you can add more lines of code to make the rest of the pixels light up as well!
+12. Verify and upload your code once more. This time you should see the first three pixels light up blue. See if you can add more lines of code to make the rest of the pixels light up as well!
 
 

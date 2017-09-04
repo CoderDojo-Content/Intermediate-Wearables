@@ -13,7 +13,7 @@
             strip.show();
         }
     ```
-    * All the code in a **function** goes in between a pair of **curly braces** `{ }`
+    All the code in a **function** goes in between a pair of **curly braces** `{ }`
 
 2. Now change your _setup_ code so that it looks like this:
     ``` 
@@ -24,7 +24,7 @@
             lightAll();
         }
     ```
-    * the last line **calls** the function you made. That means it tells the function to run.
+    The last line **calls** the function you made. That means it tells the function to run.
 
 3. Verify and upload your sketch to the Flora. Did all the pixels light up blue?
  * You might have figured out that the first number in the line `strip.setPixelColor(0, strip.Color(0, 0, 255));` decides which pixel to light up. Have you noticed that the first pixel is zero instead of one? So if you have eight pixels the last one is number `7`.

@@ -37,6 +37,6 @@
             strip.setBrightness(10);
         }
     ```
-    * Just like with the colours, the number can be anything from `0` to `255`. I've used `10` which is very dim, almost off!
+    Just like with the colours, the number can be anything from `0` to `255`. I've used `10` which is very dim, almost off!
 
 
