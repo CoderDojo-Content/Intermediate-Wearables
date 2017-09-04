@@ -24,8 +24,9 @@
  * It's important to always unplug or switch off the board before connecting or disconnecting other components so that you don't damage them!
  
 9. Attach three crocodile clips to the **GND**, **#6** and **VBATT** pins.
+![](/assets/crocsFlora_169_800.png)
 
-10. Take a NeoPixel and connect the **GND** wire to its **-** pin. Connect the **#6** to the **data in** pin: this is the pin with an arrow pointing **in towards** towards the LED in the centre. Finally connect the **VBATT** to the **+** pin. ![](/assets/crocsTestPixel_113_800.png)
+10. Take a NeoPixel and connect the **GND** wire to its **-** pin. Connect the **#6** to the **data in** pin: this is the pin with an arrow pointing **in towards** towards the LED in the centre. Finally connect the **VBATT** to the **+** pin. ![](/assets/crocsPixel_169_800.png)
 
 11. Ready? Plug in the Flora once more and watch your LED start to light up and flash a multicoloured sequence! 
 
