@@ -6,7 +6,7 @@
 2. Decide roughly where you plan to have the Flora and choose one NeoPixel for it to be connected to: this will be the first one you start sewing on. The rest will be connected to each other one by one in a chain. You should be able to trace a continuous line along the chain with your finger in such a way that it does not cross over itself \(this would cause problems with a short circuit!\)
 
 3. Draw around the outside and the inside of the shape with the pencil or chalk, marking the spot where each NeoPixel is.
-![](assets/drawAroundShape_99_800.png)
+![](assets/drawAroundShape_178_800.png)
 
 4. Ready to start sewing? Once you have everything marked out, set aside all the pieces and grab a needle and some conductive thread. About 20cm should be enough to begin with if your pixels are quite close together. If you have an embroidery hoop, it can make the stitching a lot easier.
 
