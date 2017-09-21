@@ -54,4 +54,5 @@
     ``` 
     Try it out on the Flora!
 
-6. Have a go at combining various different calls to the `animateRainbow` function and your other functions. Your imagination is the limit! You can do loads of cool things using the tricks you've learned with colours, loops and delays. If you want to see some more examples, check out the **strandtest** sketch that you used to test out the NeoPixels. ![](assets/rainbowSmile_200_800.png)
+6. Have a go at combining various different calls to the `animateRainbow` function and your other functions. Your imagination is the limit! You can do loads of cool things using the tricks you've learned with colours, loops and delays. If you want to see some more examples, check out the **strandtest** sketch that you used to test out the NeoPixels. 
+![](assets/rainbowSmile_200_800.png)

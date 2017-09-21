@@ -1,3 +1,6 @@
+{% callout %}<b>Photosensitive Seizure Warning:</b>This project involves bright flashing lights! It may not be suitable if there are sufferers of epilepsy present.
+{% endcallout %}
+
 1. Download and install the Arduino IDE from https://www.arduino.cc/en/main/software. Once installed, open the application. There a few extra things needed to make it work for this project.
 2. Open the **Preferences** from the **Arduino** menu. In the **Additional Board Manager URLs** box, paste the following and click OK.
    ```
