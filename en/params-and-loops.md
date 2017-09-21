@@ -15,6 +15,8 @@
             animateOneColour(strip.Color(0, 0, 255), 100);
         }
     ``` 
+    Notice how you're passing in two **parameters** in the brackets now? The second one is not being used just yet, but the code won't compile if you don't pass values in for all the **parameters** when you call the function.
+
 3. Verify and upload your code. What do you notice? This time you only needed to write _one line_ of code that calls `strip.setPixelColor`, and all of the pixels turned on. 
 
 4. Inside your new function, can you see that there is another pair of **curly braces** with some code in between? This pair belongs to something called a **for loop** \(but not the `loop` function!\), rather than a function. It looks like this:
@@ -39,7 +41,7 @@ The above code checks how many pixels are in your chain and then runs the code i
             }
         }
     ```
-    Instead of using a particular number for the delay, you are using the second **parameter** of your function.
+    Instead of using a particular number for the delay, you are using the second **parameter** of your function. This means you can choose different values for the `delay` when you call the function. 
 
 6. Add another call to your function inside `loop`, to turn the lights off as well as on:
     ```
@@ -59,26 +61,4 @@ The above code checks how many pixels are in your chain and then runs the code i
             animateOneColour(strip.Color(0, 255, 255), 100);
         }
     ``` 
-
-7. Let's add another **parameter** to this function, so you can choose different values for the `delay` when you call the function: 
-    ``` 
-        void lightAllOneColour(uint32_t c, uint8_t wait) {
-            for(uint16_t i=0; i<strip.numPixels(); i++) {
-                strip.setPixelColor(i, c);
-                strip.show();
-                delay(wait);
-            }
-        }
-    ```
-
-8. Change your `loop` function to look like this:
-    ```
-        void loop() {
-            lightAllOneColour(strip.Color(0, 0, 255), 200);
-            lightAllOneColour(strip.Color(255, 0, 255), 100);
-            lightAllOneColour(strip.Color(255, 0, 0), 50);
-        }
-    ``` 
-    Notice how you're passing in two **parameters** in the brackets now? The second one is the value for the `delay`.
-
-9. Try as many colours as you like! Can you see how smaller or bigger numbers for the `delay` affect the speed of the animation?
+    Add as many colours as you like. Try passing in different values other than `100` for the second **parameter** as well and watch your animation speed up or slow down!

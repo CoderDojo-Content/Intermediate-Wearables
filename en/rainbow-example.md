@@ -15,13 +15,13 @@
     ```
     This function lets you choose any numer from 0 to 255 and it mixes a colour for you.
 
-2. Now add another new function. See if you can spot the **loop** in it!
+2. Now add another new function. See if you can spot the **for loop** in it!
     ```
         void lightAllRainbow() {
             for(uint16_t i=0; i<strip.numPixels(); i++) {
                 strip.setPixelColor(i, Wheel(((i * 256 / strip.numPixels())) & 255));
+                strip.show();
             }
-            strip.show();
         }
     ```
     There's a bit of math in here too! It's there to pick a nice selection of colours evenly from across the whole rainbow.
@@ -44,30 +44,18 @@
                 strip.show();
                 delay(wait);
             }
-            for(uint16_t i=0; i<strip.numPixels(); i++) {
-                strip.setPixelColor(i, strip.Color(0,0,0));
-                strip.show();
-                delay(wait);
-            }
         }
     ```
-    Notice how the `strip.show()` has been moved inside the loop as well
 
-5. Change the function call in the `loop` function:
+5. Change the function call in the `loop` function and add a second line of code to call your other animate function too:
     ```
         void loop() {
             animateRainbow(100);
+            animateOneColour(strip.Color(0, 0, 0), 100);
         }
     ``` 
+    Try it out on the Flora!
 
-6. Have a go at putting together a sequence using a few function calls in the `loop` function. Experiment with different colours and `delay` lengths!  
-    ```
-        void loop() {
-            lightAllOneColour(strip.Color(0, 0, 255), 200);
-            lightAllOneColour(strip.Color(255, 0, 255), 500);
-            lightAllOneColour(strip.Color(255, 255, 0), 50);
-            animateRainbow(100);
-        }
-    ``` 
+6. Have a go at combining various different calls to the animateRainbow function and your other functions. Your imagination is the limit!
 
 7. You can do loads of cool things using the tricks you've learned with colours, loops and delays. If you want to see some more examples, check out the **strandtest** sketch that you used to test out the NeoPixels.
