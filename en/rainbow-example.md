@@ -26,15 +26,13 @@
     ```
     There's a bit of math in here too! It's there to pick a nice selection of colours evenly from across the whole rainbow.
 
-3. All that's left is to _call_ the function. Change the`loop` function so that it has just this line of code in it. Then verify and upload your sketch to see a lovely rainbow of colours
+3. All that's left is to _call_ the function. Change the `loop` function so that it has just this line of code in it. Then verify and upload your sketch to see a lovely rainbow of colours.
     ```
         void loop() {
             lightAllRainbow();
         }
     ``` 
-    You don't need to pass any **parameters** this time because the new function figures out the colours for you!
-
-    <!-- PICTURE HERE!! -->
+    You don't need to pass any **parameters** this time because the new function figures out the colours for you! ![](assets/rainbowSmile_200_800.png)
 
 4. How about adding a delay? Let's write a new function, that's similar to the one above but with a delay added to the loop so it animates:
     ```
