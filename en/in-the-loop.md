@@ -23,10 +23,10 @@
             delay(200);
         }
     ```
-    See how you're passing in a colour as a **parameter** to your function? This is the colour that gets used in place of `c` in the line `strip.setPixelColor(i, c);`. It means you can use the same function to make the pixels any colour, even to turn them all off!
+    See how you're passing in a colour as a **parameter** to your function? This is the colour that gets used in place of `c` on each line of your function `lightAllOneColour`. It means you can use the same function to make the pixels any colour, even to turn them all off!
 
 3. Delete the line `lightAll();` from inside the **setup** function. Verify and upload the code.
- * After the Flora has run all the code in the **setup** function, it then runs the **loop** function over and over again forever!
+ * When the Flora starts, it runs all the code in the **setup** function first and then it runs the **loop** function over and over again forever!
 
 4. What do you think the **delay** function does? Try putting in different values for it's **parameter**. For example, `delay(50);` or `delay(1000);`. Don't forget to verify and upload the code to test out your changes!
 
@@ -43,7 +43,7 @@
             delay(500);
         }
     ```
-    Now run the same code with the "off" colour:
+    Now run the same code without the "off" colour:
     ```
         void loop() {
             lightAllOneColour(strip.Color(255, 0, 255));
@@ -54,5 +54,5 @@
     ```
     See the difference?
 
-6. Try designing your own sequence by changing the code in the **loop** function! You can add as many delays and as many calls to your **lightAllOneColour** function as you like. Experiment with different values for the colour parameter.
+6. Try designing your own sequence by changing the code in the **loop** function! You can add as many delays and as many calls to your **lightAllOneColour** function as you like. Experiment with longer and shorter delays and different values for the colour parameter.
  * Remember, the whole sequence will keep repeating over and over. 
