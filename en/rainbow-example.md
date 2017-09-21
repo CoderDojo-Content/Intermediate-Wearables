@@ -32,7 +32,7 @@
             lightAllRainbow();
         }
     ``` 
-    You don't need to pass any **parameters** this time because the new function figures out the colours for you! ![](assets/rainbowSmile_200_800.png)
+    You don't need to pass any **parameters** this time because the new function figures out the colours for you! 
 
 4. How about adding a delay? Let's write a new function, that's similar to the one above but with a delay added to the loop so it animates:
     ```
@@ -54,6 +54,4 @@
     ``` 
     Try it out on the Flora!
 
-6. Have a go at combining various different calls to the animateRainbow function and your other functions. Your imagination is the limit!
-
-7. You can do loads of cool things using the tricks you've learned with colours, loops and delays. If you want to see some more examples, check out the **strandtest** sketch that you used to test out the NeoPixels.
+6. Have a go at combining various different calls to the `animateRainbow` function and your other functions. Your imagination is the limit! You can do loads of cool things using the tricks you've learned with colours, loops and delays. If you want to see some more examples, check out the **strandtest** sketch that you used to test out the NeoPixels. ![](assets/rainbowSmile_200_800.png)
