@@ -44,28 +44,19 @@
 6. Here are a few more colours that are good to know
     ```
         void lightAll() {
-            strip.setPixelColor(0, strip.Color(0, 0, 255));
-            strip.setPixelColor(1, strip.Color(255, 0, 0));
-            strip.setPixelColor(2, strip.Color(0, 255, 0));
-            strip.setPixelColor(3, strip.Color(255, 0, 255));
-            strip.setPixelColor(4, strip.Color(255, 255, 255));
-            strip.setPixelColor(5, strip.Color(255, 255, 0));
-            strip.setPixelColor(6, strip.Color(0, 255, 255));
-            strip.setPixelColor(7, strip.Color(255, 127, 0));
+            strip.setPixelColor(0, strip.Color(255, 0, 255));
+            strip.setPixelColor(1, strip.Color(255, 255, 255));
+            strip.setPixelColor(2, strip.Color(255, 255, 0));
+            strip.setPixelColor(3, strip.Color(0, 255, 255));
+            strip.setPixelColor(4, strip.Color(255, 127, 0));
+            strip.setPixelColor(5, strip.Color(0, 0, 255));
+            strip.setPixelColor(6, strip.Color(255, 0, 0));
+            strip.setPixelColor(7, strip.Color(0, 255, 0));
             strip.show();
         }
     ``` 
     
-4. Try experimenting with the numbers to get different shades. What do you think you will get if you set a value of `0` for all three colours, `strip.Color(0, 0, 0)`? 
+7. Try experimenting with the numbers to get different shades. What do you think you will get if you set a value of `0` for all three colours, `strip.Color(0, 0, 0)`? 
 
-5. Are you seeing stars yet?! Those NeoPixels sure are BRIGHT, aren't they! Luckily, if you want to, you can change the brightness of them with this code: `strip.setBrightness(10);` Add it to the _setup_ function, like this:
-    ``` 
-        void setup() {
-            // put your setup code here, to run once:
-            strip.begin();
-            strip.show();
-            strip.setBrightness(10);
-        }
-    ```
-    Just like with the colours, the number can be anything from `0` to `255`. I've used `10` which is very dim, almost off!
+8. Are you seeing stars yet?! Those NeoPixels sure are BRIGHT, aren't they! Luckily, if you want to, you can change the brightness of them with this code: `strip.setBrightness(10);` Add it to the _setup_ function, in between the lines `strip.begin();` and `strip.show();`. Just like with the colours, the number can be anything from `0` to `255`. I've used `10` which is very dim, almost off!
 
