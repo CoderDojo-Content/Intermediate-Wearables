@@ -13,7 +13,9 @@
     ```
         void loop() {
             lightAllOneColour(strip.Color(0, 0, 255));
+            delay(200);
             lightAllOneColour(strip.Color(0, 0, 0));
+            delay(200);
         }
     ``` 
     See how you're passing in a colour as a **parameter** to your function? This is the colour that gets used in place of `c` in the line `strip.setPixelColor(i, c);`. It means you can use the same function to make the pixels any colour, even to turn them all off!

@@ -16,17 +16,17 @@
         void lightAll() {
             strip.setPixelColor(0, strip.Color(0, 0, 255));
             strip.setPixelColor(1, strip.Color(255, 0, 0));
-            strip.setPixelColor(2, strip.Color(0, 0, 255));
+            strip.setPixelColor(2, strip.Color(0, 255, 0));
             strip.setPixelColor(3, strip.Color(255, 0, 255));
-            strip.setPixelColor(4, strip.Color(255, 255, 0));
-            strip.setPixelColor(5, strip.Color(0, 255, 255));
-            strip.setPixelColor(6, strip.Color(255, 127, 0));
-            strip.setPixelColor(7, strip.Color(255, 127, 0)); ** TODO pick another colour with 3 **
+            strip.setPixelColor(4, strip.Color(0, 0, 0));
+            strip.setPixelColor(5, strip.Color(255, 255, 0));
+            strip.setPixelColor(6, strip.Color(0, 255, 255));
+            strip.setPixelColor(7, strip.Color(255, 127, 0));
             strip.show();
         }
     ``` 
     
-4. Try experimenting with the numbers to get different shades. What do you think you will get if you mix the maximum value of all three colours, `strip.Color(255, 255, 255)`? 
+4. Try experimenting with the numbers to get different shades. What do you think you will get if you mix the maximum value of all three colours, `strip.Color(255, 255, 255)`? Did you no
 
 5. Are you seeing stars yet?! Those NeoPixels sure are BRIGHT, aren't they! Luckily, if you want to, you can change the brightness of them with this code: `strip.setBrightness(10);` Add it to the _setup_ function, like this:
     ``` 

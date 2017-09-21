@@ -11,11 +11,11 @@
         }
     ```
     Any line that starts with `// ` is a **comment**. Comments are ignored by the computer. They're useful for making notes for yourself or other people reading the code.
-2. Go to **Sketch** &gt; **Include Library** and select **Adafruit NeoPixel**. Do you see this line of code added to the top of your sketch? `#include <Adafruit_NeoPixel.h>` Click at the end of this line and hit Return a few times to add some blank lines underneath.
+2. Go to **Sketch** &gt; **Include Library** and select **Adafruit NeoPixel**. You should see this code get added to the top of your sketch: `#include <Adafruit_NeoPixel.h>`. Click at the end of the line and hit Return a few times to add some blank lines underneath.
 
 3. Underneath the new line of code, type the following: `#define PIXELS_PIN 6` You are setting which pin of the Flora to use for **data** \(instructions\). That's the pin you connect the **data** pins of the pixels to, pin number 6.
 
-4. Underneath that, type `#define NUM_PIXELS 8`. This is the number of NeoPixels you have. If you have a different number than 8, change it to the correct number.
+4. Underneath that, type `#define NUM_PIXELS 8`. This is the number of NeoPixels you have. If you have a different number than 8, type that number instead of 8.
 
 5. Finally, underneath that, type 
     ``` 
@@ -42,7 +42,7 @@
 
 9. Let's plug in the Flora and run your code! Press the **reset** button on the Flora and then click the **Upload** button. When it's done, what happens?
 
-10. Hopefully, you should see the first pixel light up blue. Let's do another! _Above_ the second `strip.show();`, type two more lines:
+10. Hopefully, you should see the first pixel light up blue. Let's do another! _Above_ the second `strip.show();` type two more lines:
     ```
         strip.setPixelColor(1, strip.Color(0, 0, 255));
         strip.setPixelColor(2, strip.Color(0, 0, 255));
