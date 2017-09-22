@@ -56,3 +56,5 @@
 
 6. Have a go at combining various different calls to the `animateRainbow` function and your other functions. Your imagination is the limit! You can do loads of cool things using the tricks you've learned with colours, loops and delays. If you want to see some more examples, check out the **strandtest** sketch that you used to test out the NeoPixels. 
 ![](assets/rainbowSmile_200_800.png)
+
+7. If you plan on wearing your project, you will probably want to make it more portable with battery power. A 3xAA or 3xAAA battery pack will do just fine for the Flora. See [dojo.soy/wear2-flora-power](http://dojo.soy/wear2-flora-power) for more information. For other boards you should double check the requirements for the board you are using.
