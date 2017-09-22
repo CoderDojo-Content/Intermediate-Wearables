@@ -15,11 +15,11 @@
  
 6. Sew a running stitch to the spot where the next pixel will go. Then take the next pixel and place it onto its spot, with the arrows pointing away from the first one and towards the next spot. 
 
-7. Attach it by sewing through the **input** pin \(remember, this is the pin with the arrow pointing **in towards** the LED in the centre/). Secure the thread with a few stitches at the back of the fabric and cut it short.
- * It is recommended to coat the ends of the thread with clear nail polish after cutting, to prevent fraying and avoid stray threads from causing a short circuit.
+7. Attach it by sewing through the **input** pin \(remember, this is the pin with the arrow pointing **in towards** the LED in the centre\). Secure the thread with a few stitches at the back of the fabric and cut it short.
+ * It's a good idea to coat the ends of the thread with clear nail polish after cutting, to prevent fraying and avoid stray threads from causing a short circuit.
  
-8. Using a _new piece of conductive thread_, connect the **data out** pin of the second pixel to the **data in** pin of the third pixel. Continue in this way until all the pixels are chained together along their **data** pins, with a separate piece of thread running in between each pair.
- * The chain ends with the last pixel: you don't attach anything to its **data out** pin!
+8. Using a _new piece of conductive thread_, connect the **output** pin of the second pixel to the **input** pin of the third pixel. Continue in this way until all the pixels are chained together along their **data** pins, with a separate piece of thread running in between each pair.
+ * The chain ends with the last pixel: you don't attach anything to its **ouptut** pin
  ![](/assets/pixelSewing3_136_800.png)
  
 9. Next you will connect up all the **negative** pins in the chain, this time using one long piece of conductive thread, about 50-100cm. Sew a few tight stitches through the **-** pin of each pixel starting with the first one and ending with the last. As usual sew with a running stitch in between pixels. 
@@ -27,8 +27,8 @@
 
 10. With one more long piece of conductive thread, connect all the **+** pins of the pixels in the same way you just connected the **-** pins.
 
-11. Finally, place the Flora on the t-shirt \(make sure it is **not plugged in**!\). Using three separate pieces of conductive thread, connect the **#6** pin to the **input**, the **GND** pin to the **-**, and the **VBATT** pin to the **+** pin of that first NeoPixel, sewing a running stitch in between the pins. Make sure none of the threads touch each other. You can stitch some of the unused pins of the Flora to the t-shirt with some plain thread to keep it more securely in place.
-![](/assets/sewnAll_244_800.png)
+11. Finally, place the Flora on the t-shirt \(make sure it is **not plugged in**!\). Using three separate pieces of conductive thread, connect the **#6** pin to the **input**, the **GND** pin to the **-**, and the **VBATT** pin to the **+** pin of that first NeoPixel, sewing a running stitch along the fabric2. Make sure none of the threads touch each other. You can stitch some of the unused pins of the Flora to the t-shirt with some plain thread to keep it more securely in place.
+![](/assets/stitchingComplete_200_800.png)
 12. It's the moment of truth... plug in your Flora! If your pixels didn't all light up, don't panic. Some causes could be 
   * A short circuit: are any of the threads touching? Is there anything metallic on the fabric or touching the circuit? Is the fabric wet?
   * Loose connections: The stitches at every pin should be good and tight for a secure connection
