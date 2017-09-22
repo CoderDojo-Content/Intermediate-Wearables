@@ -28,7 +28,7 @@
 10. With one more long piece of conductive thread, connect all the **+** pins of the pixels in the same way you just connected the **-** pins.
 
 11. Finally, place the Flora on the t-shirt \(make sure it is **not plugged in**!\). Using three separate pieces of conductive thread, connect the **#6** pin to the **input**, the **GND** pin to the **-**, and the **VBATT** pin to the **+** pin of that first NeoPixel, sewing a running stitch along the fabric2. Make sure none of the threads touch each other. You can stitch some of the unused pins of the Flora to the t-shirt with some plain thread to keep it more securely in place.
-![](/assets/stitchingComplete_200_800.png)
+![](/assets/stitchedCircuit_200_800.png)
 12. It's the moment of truth... plug in your Flora! If your pixels didn't all light up, don't panic. Some causes could be 
   * A short circuit: are any of the threads touching? Is there anything metallic on the fabric or touching the circuit? Is the fabric wet?
   * Loose connections: The stitches at every pin should be good and tight for a secure connection
