@@ -60,3 +60,5 @@
 
 8. Are you seeing stars yet?! Those NeoPixels sure are BRIGHT, aren't they! Luckily, if you want to, you can change the brightness of them with this code: `strip.setBrightness(10);` Add it to the _setup_ function, in between the lines `strip.begin();` and `strip.show();`. Just like with the colours, the number can be anything from `0` to `255`. I've used `10` which is very dim, almost off!
 
+9. You may find that the colours are not showing up properly towards the end of the chain. This is because the circuit is losing power due to to **resistance** in the thread. You can add more power by stitching an extra thread along both the **negative** and the **positive** tracks in your circuit.
+
