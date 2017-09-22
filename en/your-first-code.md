@@ -4,7 +4,6 @@
             // put your setup code here, to run once:
 
         }
-
         void loop() {
             // put your main code here, to run repeatedly:
 
@@ -62,6 +61,6 @@
     ```
     Can you work out what some of this code is doing?
 
-12. Verify and upload your code once more. This time you should see the first three pixels light up blue. See if you can add more lines of code to make the rest of the pixels light up as well!
+12. Verify and upload your code once more. This time you should see the first three pixels light up blue. See if you can add more lines of code to make the rest of the pixels light up as well! ![](assets/threeBlue_50_800.png)
 
 
