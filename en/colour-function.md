@@ -38,7 +38,8 @@
     ``` 
     Verify and upload the code to the Flora. Can you spot the difference?
 
-5. On a computer, colours are made by mixing the three **primary colours of light**, _red_, _green_, and _blue_. You use numbers from `0` to `255` to say how much of each colour to mix. So the code `strip.Color(0, 0, 255)` makes _blue_ because the value for red and green are both zero. What colour do you think `strip.Color(0, 255, 0)` will give you? Try it out!
+5. On a computer, colours are made by mixing the three **primary colours of light**, _red_, _green_, and _blue_. You use numbers from `0` to `255` to say how much of each colour to mix. So the code `strip.Color(0, 0, 255)` makes _blue_ because the value for red and green are both zero. 
+ * What colour do you think `strip.Color(0, 255, 0)` will give you? Try it out!
 
 6. Here are a few more colours that are good to know
     ```

@@ -61,6 +61,6 @@
     ```
     Can you work out what some of this code is doing?
 
-12. Verify and upload your code once more. This time you should see the first three pixels light up blue. See if you can add more lines of code to make the rest of the pixels light up as well! ![](assets/threeBlue_50_800.png)
+12. Verify and upload your code once more. This time you should see the first three pixels light up blue. See if you can add more lines of code to make the rest of the pixels light up as well! ![](assets/threeBlue_140_800.png)
 
 
