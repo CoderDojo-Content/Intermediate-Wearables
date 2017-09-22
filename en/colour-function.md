@@ -38,27 +38,26 @@
     ``` 
     Verify and upload the code to the Flora. Can you spot the difference?
 
-5. On a computer, colours are made by mixing the three **primary colours of light**, _red_, _green_, and _blue_. You use numbers from `0` to `255` to say how much of each colour to mix. So the code `strip.Color(0, 0, 255)` makes _blue_ because the value for red and green are both zero. 
- * What colour do you think `strip.Color(0, 255, 0)` will give you? Try it out!
+5. On a computer, colours are made by mixing the three **primary colours of light**, _red_, _green_, and _blue_. You use numbers from `0` to `255` to say how much of each colour to mix. So the code `strip.Color(0, 0, 255)` makes _blue_ because the value for red and green are both zero. What colour do you think `strip.Color(0, 255, 0)` will give you? Try it out!
 
 6. Here are a few more colours that are good to know
     ```
         void lightAll() {
-            strip.setPixelColor(0, strip.Color(255, 0, 255));
-            strip.setPixelColor(1, strip.Color(255, 255, 255));
-            strip.setPixelColor(2, strip.Color(255, 255, 0));
-            strip.setPixelColor(3, strip.Color(0, 255, 255));
-            strip.setPixelColor(4, strip.Color(255, 127, 0));
-            strip.setPixelColor(5, strip.Color(0, 0, 255));
-            strip.setPixelColor(6, strip.Color(255, 0, 0));
-            strip.setPixelColor(7, strip.Color(0, 255, 0));
+            strip.setPixelColor(0, strip.Color(0, 0, 255)); // blue
+            strip.setPixelColor(1, strip.Color(255, 0, 0)); // red
+            strip.setPixelColor(2, strip.Color(0, 255, 0)); // green
+            strip.setPixelColor(3, strip.Color(255, 0, 255)); // magenta
+            strip.setPixelColor(4, strip.Color(255, 255, 255)); // white
+            strip.setPixelColor(5, strip.Color(255, 255, 0)); // yellow
+            strip.setPixelColor(6, strip.Color(0, 255, 255)); // cyan
+            strip.setPixelColor(7, strip.Color(255, 127, 0)); // orange
             strip.show();
         }
     ``` 
     
 7. Try experimenting with the numbers to get different shades. What do you think you will get if you set a value of `0` for all three colours, `strip.Color(0, 0, 0)`? 
 
-8. Are you seeing stars yet?! Those NeoPixels sure are BRIGHT, aren't they! Luckily, if you want to, you can change the brightness of them with this code: `strip.setBrightness(10);` Add it to the _setup_ function, in between the lines `strip.begin();` and `strip.show();`. Just like with the colours, the number can be anything from `0` to `255`. I've used `10` which is very dim, almost off!
+8. Are you seeing stars yet?! Those NeoPixels sure are BRIGHT, aren't they! Luckily, if you want to, you can change the brightness of them with this code: `strip.setBrightness(10);` Add it to the _setup_ function, in between the lines `strip.begin();` and `strip.show();`. Just like with colours, the number can be anything from `0` to `255`. I've used `10` which is very dim, almost off!
 
 9. You may find that the colours are not showing up properly towards the end of the chain. This is because the circuit is losing power due to to **resistance** in the thread. You can add more power by stitching an extra thread along both the **negative** and the **positive** tracks in your circuit.
 
