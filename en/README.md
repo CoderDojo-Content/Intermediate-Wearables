@@ -3,7 +3,7 @@
 
 1. In this project you will sew LED lights to a t-shirt and program them to flash and change colours by writing code! 
 
-2. The LEDs will be controlled by the Adafruit Flora. You may also use an Adafruit Gemma, LilyPad Arduino or LilyPad Arduino USB: some small code changes will be needed such as the number of the output pin and the board setup in the Arduino IDE (see below).
+2. The LEDs will be controlled by the Adafruit Flora. You may also use an Adafruit Gemma, LilyPad Arduino or LilyPad Arduino USB; some small code changes will be needed such as the number of the output pin and the board setup in the Arduino IDE.
  * _Note:_ the Gemma does not work with Linux. It also won't work with a USB 3.0 port, so you must have a USB 2.0 port or hub to connect the Gemma to the computer.
 
 3. Download and install the Arduino IDE from [dojo.soy/wear2-arduino-ide](http://dojo.soy/wear2-arduino-ide). Once installed, open the application. There a few extra things needed to make it work for this project.
