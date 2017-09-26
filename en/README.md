@@ -19,13 +19,12 @@
 
 7. In the **Sketch** menu, go to **Include Library** and select **Manage Libraries...**. Type `neopixel` into the search box. Install **Adafruit NeoPixel by Adafruit**. Click Close.
 
-8. You will need the following hardware for this project
+8. You will need the following materials for this project
    * Adafruit Flora or Gemma and a USB cable
    * Around eight NeoPixels
    * Conductive thread
    * Three pairs of crocodile clips \(you can also use pieces of conductive thread instead, but crocodile clips are easier to test with\)
    * Optional: a battery pack will allow you to wear your finished project without being attached to the computer!
-9. Other materials you will need are
    * An embroidery needle and scissors
    * A t-shirt
    * Clear nail polish
