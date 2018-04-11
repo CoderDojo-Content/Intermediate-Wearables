@@ -1,4 +1,4 @@
-# Summary
+# Inhoud
 
 * [Configuratie](README.md)
 * [Licht, Actie!](licht-actie.md)
