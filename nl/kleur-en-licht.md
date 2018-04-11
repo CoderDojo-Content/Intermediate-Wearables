@@ -1,5 +1,6 @@
-1. You're going to write your own **function** now. **Functions** keep your code tidy. At the bottom of the sketch, click _after_ the `}` \(so, outside the `loop` function\) and press Return a couple of times. Then type the following code:
-    ``` 
+1. Je gaat nu je eigen **function** \(= functie\) schrijven. **Functions** houden je code netjes. Onderaan de schets, klik _na_ de } \(dus buiten de `loop` functie\) en klik een paar keer op Enter. typ nu de volgende code:
+
+   ```
         void lightAll() {
             strip.setPixelColor(0, strip.Color(0, 0, 255));
             strip.setPixelColor(1, strip.Color(0, 0, 255));
@@ -11,38 +12,48 @@
             strip.setPixelColor(7, strip.Color(0, 0, 255));
             strip.show();
         }
-    ```
-    All the code in a **function** goes in between a pair of **curly braces** `{ }`
+   ```
 
-2. Now change your _setup_ code so that it looks like this:
-    ``` 
+   Alle code binnen een **function **wordt binnen **accolades** { } gezet.
+
+2. Verander nu je _setup_ code zodat het er zo uit ziet:
+
+   ```
         void setup() {
             // put your setup code here, to run once:
             strip.begin();
             strip.show();
             lightAll();
         }
-    ```
-    The last line **calls** the function you made. That means it tells the function to run.
+   ```
 
-3. Verify and upload your sketch to the Flora. Did all the pixels light up blue?
- * You might have figured out that the first number in the line `strip.setPixelColor(0, strip.Color(0, 0, 255));` decides which pixel to light up. Have you noticed that the first pixel is zero instead of one? So if you have eight pixels the last one is number `7`.
+   De laatste regel **roept** de function die je gemaakt hebt **aan**. Het vertelt de functie om te beginnen.
 
-4. Change the second line of the `lightAll` function from
-    ```
+3. Verifieer en upload je schets naar Flora. Lichten alle pixels blauw op?
+
+   * Je zult vast gezien hebben dat het eerste getal in de regel `strip.setPixelColor(0, strip.Color(0, 0, 255)); `bepaalt welke pixel oplicht. Zie je dat de eerste pixel nul is in plaats van één? Dus als je acht pixels hebt is je laatste getal `7`.
+
+4. Verander de tweede regel van `lightAll `functie van
+
+   ```
         strip.setPixelColor(1, strip.Color(0, 0, 255));
-    ``` 
-    to
-    ```
+   ```
+
+   naar
+
+   ```
         strip.setPixelColor(1, strip.Color(255, 0, 0));
-    ``` 
-    Verify and upload the code to the Flora. Can you spot the difference?
+   ```
 
-5. On a computer, colours are made by mixing the three **primary colours of light**, _red_, _green_, and _blue_. You use numbers from `0` to `255` to say how much of each colour to mix. So the code `strip.Color(0, 0, 255)` makes _blue_ because the value for red and green are both zero. 
- * What colour do you think `strip.Color(0, 255, 0)` will give you? Try it out!
+   Verifieer en upload je code naar Flora. Zie je het verschil?
 
-6. Here are a few more colours that are good to know
-    ```
+5. Op een computer worden kleuren gemaakt door de drie **primaire kleuren van licht**, _rood_, _groen_ en _blauw_ te mengen. Je gebruikt getallen van `0` tot `255` om te vertellen hoeveel van elke kleur gemengd moet worden. Dus de code `strip.Color(0, 0, 255)` maakt _blauw_ omdat de waarden van rood en groen beide nul zijn.
+
+   * Welke kleur geeft `strip.Color(0, 255, 0)` denk je? Probeer het uit!
+
+6. Hier zijn nog wat kleuren die handig zijn om te weten:
+
+   ```
         void lightAll() {
             strip.setPixelColor(0, strip.Color(0, 0, 255)); // blue
             strip.setPixelColor(1, strip.Color(255, 0, 0)); // red
@@ -54,11 +65,13 @@
             strip.setPixelColor(7, strip.Color(255, 127, 0)); // orange
             strip.show();
         }
-    ``` 
-    
-7. Try experimenting with the numbers to get different shades. What do you think you will get if you set a value of `0` for all three colours, `strip.Color(0, 0, 0)`? 
+   ```
 
-8. Are you seeing stars yet?! Those NeoPixels sure are BRIGHT, aren't they! Luckily, if you want to, you can change the brightness of them with this code: `strip.setBrightness(10);` Add it to the _setup_ function, in between the lines `strip.begin();` and `strip.show();`. Just like with colours, the number can be anything from `0` to `255`.
+7. Experimenteer met de getallen voor verschillende kleuren. Wat denk je dat er gebeurt als je de waarde op `0` zet voor alle kleuren `strip.Color(0, 0, 0)`?
 
-9. You may find that the colours are not showing up properly towards the end of the chain. This is because the circuit is losing power due to **resistance** in the thread. You can add more power by stitching an extra thread along both the **negative** and the **positive** tracks in your circuit.
+8. Zie je al sterretjes?! NeoPixels zijn echt FEL, niet waar! Gelukkig kun je de felheid van de pixels veranderen met deze code: `strip.setBrightness(10);`. Voeg het toe aan de _setup_ functie, tussen de regels `strip.begin();` en `strip.show();`. Net als met kleuren kun je getallen tussen `0` en `255` gebruiken.
+
+9. Het kan zijn dat de kleuren er aan het eind van de keten niet zo goed uitzien. Dat komt omdat het circuit aan kracht verliest door **weerstand** in de draad. Je kunt meer kracht toevoegen door een extra draad te naaien langs zowel de **negatieve **als **positieve **lijnen in je circuit.
+
+
 
