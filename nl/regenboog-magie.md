@@ -1,5 +1,6 @@
-1. Add the following new function to the end of your sketch. Don't worry, you don't have to understand it just now! It's borrowed from the example sketch you ran earlier. 
-    ```
+1. Voeg de volgende nieuwe functie toe aan het eind van je schets. Geen zorgen, je hoeft het niet meteen te begrijpen! het komt uit de voorbeeldschets die je eerder hebt gebruikt.
+
+   ```
         uint32_t Wheel(byte WheelPos) {
             WheelPos = 255 - WheelPos;
             if(WheelPos < 85) {
@@ -12,30 +13,36 @@
             WheelPos -= 170;
             return strip.Color(WheelPos * 3, 255 - WheelPos * 3, 0);
         }
-    ```
-    This function lets you choose any numer from 0 to 255 and it mixes a colour for you.
+   ```
 
-2. Now add another new function. See if you can spot the **for loop** in it!
-    ```
+   Deze functie laat je elk getal tussen 0 en 255 kiezen en mengt een kleur voor je.
+
+2. Voeg nu deze nieuwe functie toe. Zie je de **for loop** daarin?
+
+   ```
         void lightAllRainbow() {
             for(uint16_t i=0; i<strip.numPixels(); i++) {
                 strip.setPixelColor(i, Wheel(((i * 256 / strip.numPixels())) & 255));
                 strip.show();
             }
         }
-    ```
-    There's a bit of math in here too! It's there to pick a nice selection of colours evenly from across the whole rainbow.
+   ```
 
-3. All that's left is to _call_ the function. Change the `loop` function so that it has just this line of code in it. Then verify and upload your sketch to see a lovely rainbow of colours.
-    ```
+   Hier zit ook wat wiskunde in! Het kiest een fraaie selectie van kleuren uit de hele regenboog.
+
+3. Nu hoef je de functie alleen nog maar _aan te roepen_. Verander de `loop` functie zodat deze coderegel erin zit. Verifieer en upload dan de schets om een prachtige regenboog aan kleuren te zien.
+
+   ```
         void loop() {
             lightAllRainbow();
         }
-    ``` 
-    You don't need to pass any **parameters** this time because the new function figures out the colours for you! 
+   ```
 
-4. How about adding a delay? Let's write a new function, that's similar to the one above but with a delay added to the loop so it animates:
-    ```
+   Je hoeft geen **parameters** in te voeren omdat de nieuwe functie de kleuren voor je uitzoekt!
+
+4. En nog een delay toevoegen? Schrijf een nieuwe functie die lijkt op die hierboven maar met een delay toegevoegd in de loop zodat het animeert:
+
+   ```
         void animateRainbow(uint8_t wait) {
             for(uint16_t i=0; i<strip.numPixels(); i++) {
                 strip.setPixelColor(i, Wheel(((i * 256 / strip.numPixels())) & 255));
@@ -43,18 +50,23 @@
                 delay(wait);
             }
         }
-    ```
+   ```
 
-5. Change the function call in the `loop` function and add a second line of code to call your other animate function too:
-    ```
+5. Verander de functieaanroep in de `loop `functie en voeg een tweede regel toe om je andere animatiefunctie aan te roepen:
+
+   ```
         void loop() {
             animateRainbow(100);
             animateOneColour(strip.Color(0, 0, 0), 100);
         }
-    ``` 
-    Try it out on the Flora!
+   ```
 
-6. Have a go at combining various different calls to the `animateRainbow` function and your other functions. Your imagination is the limit! You can do loads of cool things using the tricks you've learned with colours, loops and delays. If you want to see some more examples, check out the **strandtest** sketch that you used to test out the NeoPixels. 
-![](assets/rainbowSmile_200_800.png)
+   Probeer het uit op de Flora!
 
-7. If you plan on wearing your project, you will probably want to make it more portable with battery power. A 3xAA or 3xAAA battery pack will do just fine for the Flora. See [dojo.soy/wear2-flora-power](http://dojo.soy/wear2-flora-power) for more information. For other boards you should double check the requirements for the board you are using.
+6. Combineer verschillende aanroepen in de `animateRainbow` functie en je andere functies. Jouw fantasie is eindeloos! Je kunt heel veel gave dingen doen met de trucjes die je geleerd hebt met kleuren, loops en delays. Als je meer voorbeelden wilt, kijk je in de **strandtest** schets die je gebruikt hebt om de NeoPixels te testen.  
+   ![](assets/rainbowSmile_200_800.png)
+
+7. Als je van plan bent om je project te dragen, kun je een batterijhouder gebruiken. Een houder met 3xAA, 3xAAA of een knoopbatterij werkt goed op de Flora. Kijk op [dojo.soy/wear2-flora-power](http://dojo.soy/wear2-flora-power) voor meer informatie. Gebruik je niet de Flora maar een ander board kijk dan na wat die nodig hebben.
+
+
+
