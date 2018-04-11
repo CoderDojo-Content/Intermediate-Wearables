@@ -1,48 +1,50 @@
-1. Before you start, it is a good idea to test each of your NeoPixels. Open the Arduino IDE. Make sure the correct device is selected in the **Tools** menu. I'm using the Flora so it's _Adafruit Flora_.
+1. Voordat je begint is het handig om je NeoPixels te testen. Open Arduino IDE. Kijk nog even na welk board je gebruikt. In de voorbeelden gebruiken we _Adafruit Flora_.
 
-2. Go to the **File** menu, select **Examples**, then find **Adafruit NeoPixel** \(it may be at the very bottom!\) and choose **strandtest**.
+2. Ga naar **Bestand**, selecteer **Voorbeelden** en zoek **Adafruit NeoPixel** \(let op: deze kan helemaal onderaan staan!\) en kies **strandtest**.
 
-3. A code file opens. A code file is called a **sketch** in the Arduino IDE. Find this line of code near the top:
+3. Een nieuw scherm wordt geopend. Het codebestand heet een **schets** in Arduino IDE. Zoek deze coderegel:
 
    ```
       Adafruit_NeoPixel strip = Adafruit_NeoPixel(60, PIN, NEO_GRB + NEO_KHZ800);
    ```
 
-4. Change the first number to `1`. The line should look like this now:
+4. Verander het eerste getal naar `1`. Nu moet de code er zo uitzien:
 
    ```
       Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, PIN, NEO_GRB + NEO_KHZ800);
    ```
 
-5. Click **File** &gt; **Save As...**. Type in a name for your sketch and click **Save**.
+5. Klik op **Bestand** &gt; **Opslaan als**. Typ een naam voor jouw schets en sla het op.
 
-6. At the top of your **sketch**, click on the tick icon to **Verify** the code. At the bottom of the window you should see the words "Done Compiling" which means the code **compiled** successfully \(if not, you will see errors printed here. To fix these you will need to do some debugging and change your code!\). ![](assets/verifyIcon.png)
+6. Boven in je **schets** klik je op **Verifiëren**. Onderin je scherm moet komen te staan "Compileren voltooid" wat betekent dat de code juist is **gecompileerd** \(zo niet, dan zie je hier de foutmeldingen. Je moet de fouten dan gaan verbeteren\).  
+    ![](assets/verifyIcon.png)
 
-7. Ready to upload! Plug in your Flora. Press the **reset** button on the Flora and then _straight away_, while the red light is pulsing, click on the arrow icon next to the tick to **Upload** the code onto the board. You should see the red light flashing, followed by two orange lights on the board. When it's finished, you should see the words "Done uploading." at the bottom of your sketch.  
+7. Nu gaan we uploaden! Koppel je Flora aan de computer. Druk op de **reset** knop op de Flora en dan _meteen_, terwijl het rode lichtje knippert, klik je op het pijlicoon om de code naar je Flora te uploaden. Het rode lichtje moet knipperen, gevolgd door twee oranje lichtjes op de Flora. Als het klaar is, zou de tekst "Upload voltooid" te zien moeten zijn onderin je schets.  
    ![](assets/upload3_120_800.png)
 
-   * At first it can be a bit tricky to get the upload to work. Make sure the correct board is selected and that you have a working USB cable that's plugged in properly on both ends. After that, it's all about timing! You'll get the hang of it.
+   * Soms lukt het uploaden niet meteen. Zorg dat het juiste board geselecteerd is, dat je USB kabel werkt en goed gekoppeld zit. Dan gaat het alleen nog om timing! Je krijgt het vanzelf voor elkaar.
 
-8. Unplug the Flora from your computer \(the power switch on a Flora can be used to turn off the power when using a battery pack, however it does not work when plugged into a computer via USB\).
+8. Koppel Flora los van je computer \(de aan/uit knop op een Flora kan gebruikt worden als deze is aangesloten op een batterijhouder, maar werkt niet als de Flora via USB aan een computer gekoppeld is\).
 
-   * It's important to always unplug or switch off the board before connecting or disconnecting other components so that you don't damage them!
+   * Koppel Flora los of zet het uit voordat je andere onderdelen vast- of loskoppelt zodat er niets beschadigt!
 
-9. Attach three crocodile clips to the **GND**, **\#6** and **VBATT** pins.  
-   ![](/assets/crocsFlora_169_800.png)
+9. Klem drie krokodillenklemmen aan de **GND**, **\#6** en **VBATT** pinnen.  
+   ![](/nl/assets/crocsFlora_169_800.png)
 
-10. Take a NeoPixel and connect the **GND** wire to its **-** pin. Connect the **\#6** to the **data in** pin: this is the pin with an arrow pointing **in towards** towards the LED in the centre. Finally connect the **VBATT** to the **+** pin. ![](/assets/crocsPixel_169_800.png)
+10. Pak een NeoPixel en verbind de **GND** draad aan de **-** pin. Verbind de **\#6** aan de **data in** pin: dit is de pin met de pijl die naar binnen wijst op de NeoPixel. Verbind tenslotte de **VBATT** aan de **+** pin.  
+    ![](/nl/assets/crocsPixel_169_800.png)
 
-11. Ready? Plug in the Flora once more and watch your LED start to light up and flash a multicoloured sequence!
+11. Klaar? Zet Flora weer aan en zie hoe je NeoPixel oplicht en in meerdere kleuren knippert!
 
-12. Test each of your NeoPixels one by one, by connecting them up to the Flora as you've just done. Remember to **unplug the Flora** before connecting or disconnecting any wires!
+12. Test al je NeoPixels door ze aan te sluiten zoals beschreven bij stap 10. Onthoud dat je Flora** uitzet** voor de de draden vast- of loskoppelt!
 
-13. Once you're done testing the NeoPixels, change the code again to the total number of pixels you'll be using. Mine is eight:
+13. Als je de NeoPixels getest hebt, verander je de code naar het aantal pixels dat je gaat gebruiken. Ik gebruik er acht:
 
     ```
       Adafruit_NeoPixel strip = Adafruit_NeoPixel(8, PIN, NEO_GRB + NEO_KHZ800);
     ```
 
-14. Click **Verify** and then **upload** the new code onto the Flora. Next you're going to make your NeoPixel circuit!
+14. Klik op **Verifieer** en **upload** de nieuwe code naar je Flora. Nu gaan we een NeoPixel circuit maken!
 
 
 
