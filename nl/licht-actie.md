@@ -29,10 +29,10 @@
    * Koppel Flora los of zet het uit voordat je andere onderdelen vast- of loskoppelt zodat er niets beschadigt!
 
 9. Klem drie krokodillenklemmen aan de **GND**, **\#6** en **VBATT** pinnen.  
-   ![](/nl/assets/crocsFlora_169_800.png)
+   ![](assets/crocsFlora_169_800.png)
 
 10. Pak een NeoPixel en verbind de **GND** draad aan de **-** pin. Verbind de **\#6** aan de **data in** pin: dit is de pin met de pijl die naar binnen wijst op de NeoPixel. Verbind tenslotte de **VBATT** aan de **+** pin.  
-    ![](/nl/assets/crocsPixel_169_800.png)
+    ![](assets/crocsPixel_169_800.png)
 
 11. Klaar? Zet Flora weer aan en zie hoe je NeoPixel oplicht en in meerdere kleuren knippert!
 

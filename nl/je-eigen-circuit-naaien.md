@@ -24,7 +24,7 @@
 8. Gebruik een _nieuw stuk geleidedraad_, verbind de **output** pin van de tweede pixel aan de **input **pin van de derde pixel. Ga zo door tot alle pixels aan elkaar zitten via hun **data** pins. Gebruik steeds een nieuwe draad tussen de pixels.
 
    * De keten stopt bij de laatste pixel; je zet niets vast aan diens **output** pin.
-     ![](/nl/assets/pixelSewing3_136_800.png)
+     ![](assets/pixelSewing3_136_800.png)
 
 9. Nu ga je alle **negatieve** pins in de keten verbinden, gebruik hiervoor een stuk draad van 50-100 cm. Naai een paar strakke steken door elke - pin van elke pixel. Begin bij de eerste en eindig bij de laatste. gebruik een rijgsteek tussen de pixels.
 
@@ -33,7 +33,7 @@
 10. Gebruik een lang stuk draad om alle **+** pinnen van de pixels te verbinden, net zoals je de **-** pinnen in stap 9 verbonden hebt.
 
 11. Tot slot leg je de Flora op je t-shirt \(zorg dat Flora _niet_ aanstaat!\). Gebruik drie verschillende stukken geleidedraad. Verbind de **\#6** pin aan de **input**, de **GND** pin aan de **-** en de **VBATT** pin aan de **+** pin van de eerste NeoPixel. Gebruik weer een rijgsteek. Zorg dat geen van de draden elkaar raken. Je kunt andere pins van de Flora met gewoon naaigaren vastzetten op de stof om het steviger op zijn plek te zetten.  
-    ![](/nl/assets/stitchedCircuit_200_800.png)
+    ![](assets/stitchedCircuit_200_800.png)
 
 12. Het moment van de waarheid: tijd om je Flora aan te zetten! Schrik niet als niet alle pixels oplichten. Dat kan veroorzaakt worden door: 
     * Kortsluiting: raken draden elkaar? Raakt iets van metaal de stof of het circuit? Is de stof nat?
