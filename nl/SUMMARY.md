@@ -16,5 +16,5 @@
 * [Knipperend licht](knipperend-licht.md)
 * [Kleur en licht](kleur-en-licht.md)
 * [Animeer!](animeer.md)
-* [Regnboog magie](regenboog-magie.md) -->
+* [Regenboog magie](regenboog-magie.md) -->
 
