@@ -1,38 +1,47 @@
-1. Create the following new function at the end of your sketch:
-    ``` 
+1. Maak de volgende nieuwe functie aan het eind van je schets:
+
+   ```
         void animateOneColour(uint32_t c, uint8_t wait) {
             for(uint16_t i=0; i<strip.numPixels(); i++) {
                 strip.setPixelColor(i, c);
                 strip.show();
             }
         }
-    ```
-    * Can you see that this function takes _two_ **parameters**? You'll use the second one later on.
+   ```
 
-2. Delete \(or **comment out**!\) the code in the `loop` function and write a call to your new function:
-    ```
+   * Zie je dat deze functie _twee _**parameters** heeft? Je gebruikt de tweede pas later.
+
+2. Verwijder \(of **comment out**!\) de code in de `loop` functie en schrijf een nieuwe aanroep voor je nieuwe functie:
+
+   ```
         void loop() {
             animateOneColour(strip.Color(0, 0, 255), 100);
         }
-    ``` 
-    Notice how you're passing in two **parameters** in the brackets now? The second one is not being used just yet, but the code won't compile if you don't pass values in for all the **parameters** when you call the function.
+   ```
 
-3. Verify and upload your code. What do you notice? This time you only needed to write _one line_ of code that calls `strip.setPixelColor`, and all of the pixels turned on. 
+   Zie je hoe je twee **parameters** binnen de haakjes zet? De tweede wordt nu nog niet gebruikt, maar de code zal niet compileren als je geen waarde voor alle **parameters **invult als je de functie aanroept.
 
-4. Inside your new function, can you see that there is another pair of **curly braces** with some code in between? This pair belongs to something called a **for loop** \(but not the `loop` function!\), rather than a function. It looks like this:
-    ``` 
+3. Verifieer en upload je code. Wat zie je? Nu hoefde je maar _één regel_ te schrijven die `strip.setPixelColor` aanriep en alle pixels aanzette.
+
+4. Binnen je nieuwe functie, zie je dat er nog een paar **accolades** staan met wat code? Dit paar behoort toe aan een **for loop** \(= voor lus; maar niet de `loop` functie!\), en niet aan een functie. Het ziet er zo uit:
+
+   ```
         for(uint16_t i=0; i<strip.numPixels(); i++) {
-            
-        }
-    ```
-The above code checks how many pixels are in your chain and then runs the code inside the curly braces that many times. _Here's the clever bit:_ The value of `i` starts off as zero and changes by one each time, so every time the line `strip.setPixelColor(i, c);` runs, it's setting the colour of the _next_ pixel!
 
-5. Time to do somthing with that second **parameter**! In your new `animateOneColour` function, add the following line after `strip.show();`
-    ```
+        }
+   ```
+
+   De code hierboven kijkt na hoeveel pixels er in je keten zitten en voert dan de code binnen de accolades dat aantal keer uit. _Dit is er nou zo handig aan: _de waarde van` i `begint bij nul en verandert elke keer met één, dus elke keer dat de regel `strip.setPixelColour (i, c);` uitgevoerd wordt, bepaalt het de kleur van de _volgende_ pixel!
+
+5. Nu gaan we wat met de tweede **parameter **doen! In je nieuwe `animateOneColour` functie voeg je de volgende regel toe na `strip.show();`
+
+   ```
         delay(wait);
-    ```
-    Make sure the new line is _before_ the `}`, so it's inside the loop. Your function should look like this now:
-    ``` 
+   ```
+
+   Zorg ervoor dat de nieuwe regel _vóór_ de` }` staat, dus binnen de loop. Je code zou er nu zo uit moeten zien:
+
+   ```
         void animateOneColour(uint32_t c, uint8_t wait) {
             for(uint16_t i=0; i<strip.numPixels(); i++) {
                 strip.setPixelColor(i, c);
@@ -40,25 +49,32 @@ The above code checks how many pixels are in your chain and then runs the code i
                 delay(wait);
             }
         }
-    ```
-    Instead of using a particular number for the delay, you are using the second **parameter** of your function. This means you can choose different values for the `delay` when you call the function. 
+   ```
 
-6. Add another call to your function inside `loop`, to turn the lights off as well as on:
-    ```
+   Je gebruikt nu geen getal voor de delay, maar de tweede **parameter** van je functie. Dit betekent dat je verschillende waarden voor de `delay` kunt kiezen als je de functie aanroept.
+
+6. Voeg nog een aanroep toe aan je functie binnen `loop`, om de lichtjes uit en aan te zetten:
+
+   ```
         void loop() {
             animateOneColour(strip.Color(0, 0, 255), 100);
             animateOneColour(strip.Color(0, 0, 0), 100);
         }
-    ``` 
+   ```
 
-7. Verify your code again and upload the sketch to the Flora! Now you have a cool animated sequence!
+7. Verifieer je code weer en upload de schets naar je Flora. Nu heb je een gave geanimeerde reeks!
 
-8. Of course, you don't have to turn off the pixels. How about animating a bunch of colours one after the other?
-    ```
+8. Je hoeft de pixels natuurlijk niet uit te zetten. Waarom niet een reeks kleuren achter elkaar animeren?
+
+   ```
         void loop() {
             animateOneColour(strip.Color(255, 127, 0), 100);
             animateOneColour(strip.Color(255, 0, 255), 100);
             animateOneColour(strip.Color(0, 255, 255), 100);
         }
-    ``` 
-    Add as many colours as you like. Try passing in different values other than `100` for the second **parameter** as well and watch your animation speed up or slow down!
+   ```
+
+   Voeg zoveel kleuren toe als je wilt. Verander ook de waarden van de tweede **parameter** van `100` naar iets anders en zie hoe je animatie sneller of langzamer gaat!
+
+
+
