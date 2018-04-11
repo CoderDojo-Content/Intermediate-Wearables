@@ -1,5 +1,6 @@
-1. In Arduino IDE, click **File** &gt; **New**. You will get a blank **sketch** that looks like this 
-    ```
+1. In Arduino IDE, klik op **Bestand** &gt; **Nieuw**. Je ziet een nieuwe **sketch** die er zo uit moet zien:
+
+   ```
         void setup() {
             // put your setup code here, to run once:
 
@@ -8,47 +9,55 @@
             // put your main code here, to run repeatedly:
 
         }
-    ```
-    Any line that starts with `// ` is a **comment**. Comments are ignored by the computer. They're useful for making notes for yourself or other people reading the code.
-2. Go to **Sketch** &gt; **Include Library** and select **Adafruit NeoPixel**. You should see this code get added to the top of your sketch: `#include <Adafruit_NeoPixel.h>`. Click at the end of the line and hit Return a few times to add some blank lines underneath.
+   ```
 
-3. Underneath the new line of code, type the following: `#define PIXELS_PIN 6` You are setting which pin of the Flora to use for **data** \(instructions\). That's the pin you connect the **data** pins of the pixels to, pin number 6.
+   Elke regel die start met `//` is een **comment** \(= commentaar\). Comments worden door de computer genegeerd. Ze zijn handig om notities te maken voor jezelf of anderen.
 
-4. Underneath that, type `#define NUM_PIXELS 8`. This is the number of NeoPixels you have. If you have a different number than 8, type that number instead of 8.
+2. Ga naar **Schets** &gt; **Bibliotheek gebruiken** en selecteer **Adafruit NeoPixel**. Je zou nu deze coderegel boven in je schets moeten zien: `#include <Adafruit_NeoPixel.h>`. Klik aan het eind van die regel en klik een paar keer op Enter om een paar blanco regels in te voegen.
 
-5. Finally, underneath that, type 
-    ``` 
+3. Onder deze nieuwe coderegel typ je `#define PIXELS_PIN 6`. Je vertelt nu welke pin van de Flora gebruikt gaat worden voor **data** \(instructies\). Dit is de pin die de **data** pinnen van de pixels verbindt: pin nummer 6. 
+
+4. Daaronder typ je `#define NUM_PIXELS 8`. Dit is het aantal NeoPixels dat je gebruikt. Als je een ander aantal dan 8 gebruikt, typ dan dat getal.
+
+5. Tenslotte typ je deze regel:
+
+   ```
         Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_PIXELS, PIXELS_PIN, NEO_GRB + NEO_KHZ800);
-    ```
+   ```
 
-6. Inside the _setup_ function, add the following two lines
-    ``` 
+6. Binnen de _setup_ functie voeg je de volgende twee coderegels toe:
+
+   ```
         void setup() {
             // put your setup code here, to run once:
             strip.begin();
             strip.show();
         }
-    ```
-    * the code in the _setup_ function runs when the Flora starts
+   ```
 
-7. After `strip.show();`, press return and type these two lines underneath
-    ``` 
+   * de code in de _setup_ functie wordt uitgevoerd als de Flora opstart.
+
+7. Na `strip.show();` klik je op Enter en typ je vervolgens deze twee regels:
+
+   ```
         strip.setPixelColor(0, strip.Color(0, 0, 255));
         strip.show();
-    ```
+   ```
 
-8. Click **Verify** to compile your code and check for errors. If there are any mistakes you will need to fix the code and check again. Usually the errors tell you which line of code needs fixing. Check that you typed it exactly as shown!
+8. Klik op **Verifiëren** om je code te compileren en op fouten na te kijken. Als er fouten zijn, verbeter ze dan. Meestal zie je staan in welke regel de fout zit. Zorg dat je precies typt wat er in deze kaarten staat!
 
-9. Let's plug in the Flora and run your code! Press the **reset** button on the Flora and then click the **Upload** button. When it's done, what happens?
+9. Koppel Flora aan je computer en voer je code uit. Klik op de **reset** knop op de Flora en dan op de **Upload **knop. Wat gebeurt er als het uploaden klaar is?
 
-10. Hopefully, you should see the first pixel light up blue. Let's do another! _Above_ the second `strip.show();` type two more lines:
+10. Hopelijk licht de eerste pixel blauw op. Nu gaan we de volgende doen! Boven de tweede `strip.show();` typ je de volgende twee regels:
+
     ```
         strip.setPixelColor(1, strip.Color(0, 0, 255));
         strip.setPixelColor(2, strip.Color(0, 0, 255));
-    ``` 
+    ```
 
-11. The _setup_ function should look like this now:
-    ``` 
+11. De _setup_ functie zou er nu zo uit moeten zien:
+
+    ```
         void setup() {
             // put your setup code here, to run once:
             strip.begin();
@@ -59,8 +68,10 @@
             strip.show();
         }
     ```
-    Can you work out what some of this code is doing?
 
-12. Verify and upload your code once more. This time you should see the first three pixels light up blue. See if you can add more lines of code to make the rest of the pixels light up as well! ![](assets/threeBlue_150_800.png)
+    Snap je wat deze code doet?
+
+12. Verifieer en upload je code. Nu zouden de eerste drie pixels blauw moeten oplichten. Schrijf zelf de coderegels voor de andere pixels!![](assets/threeBlue_150_800.png)
+
 
 
